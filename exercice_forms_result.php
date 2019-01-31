@@ -13,7 +13,7 @@
   }
  ?>
 
- //Exercice 2
+//Exercice 1.3
 
  <?php
    $nom = "";
@@ -34,7 +34,7 @@
      <input type="submit" value="Envoyer">
    </form>
 
-   //Exercice 3
+//Exercice 1.3
    <?php
      $array = array('Luca', 'Arthur', 'Rob', 'Big');
      $nom = "";
@@ -65,3 +65,14 @@
          echo "Heu ... On se connait ?";
        }
    ?>
+
+//Exercice 2
+<?php
+  $str = "lucasguera2@outlook.fr";
+  $pos = strpos($str, '@');
+  if($pos == true) {
+    echo "Adresse mail :".$str." valide";
+  } else {
+    echo "Votre adresse mail est invalide";
+  }
+ ?>
