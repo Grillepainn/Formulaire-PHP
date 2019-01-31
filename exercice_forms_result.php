@@ -66,7 +66,7 @@
        }
    ?>
 
-//Exercice 2
+//Exercice 2.1
 <?php
   $str = "lucasguera2@outlook.fr";
   $pos = strpos($str, '@');
@@ -74,5 +74,26 @@
     echo "Adresse mail :".$str." valide";
   } else {
     echo "Votre adresse mail est invalide";
+  }
+ ?>
+
+//Exercice 2.2
+<?php
+  function searchinstr($str) {
+    $pos = strpos($str, '@');
+    if ($pos == true) {
+      $value1 = 1;
+      return $value1;
+    } else {
+      $value0 = 0;
+      return $value0;
+    }
+  }
+
+  $strtest = "lucasguera2@outlook.fr";
+  if (searchinstr($strtest) == 1) {
+    echo 1; //Voir avec Simon, n'arrive pas à accéder à la variable $value1
+  } else {
+    echo 0; //Voir avec Simon, n'arrive pas à accéder à la variable $value2
   }
  ?>
