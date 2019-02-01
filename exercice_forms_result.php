@@ -36,7 +36,7 @@
 
 //Exercice 1.3
    <?php
-     $array = array('Luca', 'Arthur', 'Rob', 'Big');
+     $array = array('Luca', 'Arthur', 'Rob', 'Big', 'Clou');
      $nom = "";
      if(isset($_POST['Nom'])) {
        $nom = $_POST['Nom'];}
